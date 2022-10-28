@@ -51,6 +51,20 @@ $mobile-width: 320px;
 	margin-right: auto;
 }
 
+@mixin standart-button {
+	background: $orange;
+	border: none;
+	border-radius: 25px;
+	padding: 16px 20px;
+	width: 298px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 140%;
+	letter-spacing: 1.4px;
+}
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -81,6 +95,12 @@ button:hover {
 	opacity: 80%;
 }
 
+body {
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 140%;
+}
+
 .header {
 	background-color: $black;
 }
@@ -92,6 +112,9 @@ button:hover {
 	align-items: center;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 140%;
 }
 
 .header__left-wrapper {
@@ -103,6 +126,14 @@ button:hover {
 .nav__list {
 	display: flex;
 	gap: 20px;
+}
+
+.nav__link, .header__design-link {
+	color: #ffffff;
+}
+
+.nav__link--active {
+	color: #F9804B;
 }
 
 .watch-online {
@@ -132,6 +163,10 @@ button:hover {
 	z-index: 2;
 }
 
+.watch-online__title--accent {
+	color: $yellow;
+}
+
 .watch-online__round {
 	position: absolute;
 	z-index: 1;
@@ -144,10 +179,7 @@ button:hover {
 }
 
 .watch-online__button {
-	background: $orange;
-	border: none;
-	border-radius: 25px;
-	padding: 10px 90px;
+	@include standart-button();
 	margin: 50px 110px 0 0;
 }
 
@@ -228,10 +260,7 @@ button:hover {
 }
 
 .pet__bottom {
-	background: $orange;
-	border: none;
-	border-radius: 25px;
-	padding: 10px 90px;
+	@include standart-button();
 }
 
 .pick-and-feed {
@@ -287,10 +316,8 @@ button:hover {
 
 .pick-and-feed__button {
 	display: block;
-	background: $orange;
-	border: none;
-	border-radius: 25px;
-	padding: 10px 90px;
+	text-align: center;
+	@include standart-button();
 }
 
 .testimonials {
@@ -378,10 +405,8 @@ button:hover {
 }
 
 .testimonials__button {
-	background: $orange;
-	border: none;
+	@include standart-button();
 	border-radius: 5px;
-	padding: 10px 90px;
 }
 
 .footer {
@@ -400,15 +425,44 @@ button:hover {
 	align-items: center;
 }
 
+.subscribe__title {
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 120%;
+}
+
+.subscribe__input {
+	border: 1px solid #FE9013;
+	background-color: $black;
+	padding: 10px;
+	border-radius: 5px;
+	width: 228px;
+	margin-right: 10px;
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 140%;
+}
+
+.subscribe__button {
+	border: 1px solid $gray;
+	color: $green;
+	background-color: $light-gray;
+	padding: 10px;
+	border-radius: 5px;
+	width: 129px;
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+}
+
 .footer__medium-button {
+	@include standart-button();
 	display: block;
-	width: 298px;
 	margin-top: 40px;
 	margin-bottom: 40px;
-	background: $orange;
-	border: none;
 	border-radius: 5px;
-	padding: 10px;
 	text-align: center;
 }
 
@@ -425,4 +479,9 @@ button:hover {
 
 .social__item {
 	margin-bottom: 10px;
+	color: #ffffff;
+}
+
+.footer__design-text {
+	color: #ffffff;
 }
