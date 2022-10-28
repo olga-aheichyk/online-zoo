@@ -107,7 +107,7 @@ button:hover {
 
 .watch-online {
 	@include center-wrapper();
-	background: url('/assets/images/panda.jpg');
+	background: url('../../assets/images/panda.jpg');
 	height: 780px;
 	display: flex;
 	align-items: center;
@@ -155,7 +155,7 @@ button:hover {
 	@include center-wrapper();
 	margin-top: 100px;
 	height: 605px;
-	background: url('/assets/images/backstage-background.png');
+	background: url('../../assets/images/backstage-background.png');
 	background-position: right top;
 	background-repeat: no-repeat;
 	display: flex;
@@ -177,7 +177,7 @@ button:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-image: url('/assets/images/palm_foto.png'), url('/assets/images/strelitzia.png');
+	background-image: url('../../assets/images/palm_foto.png'), url('../../assets/images/strelitzia.png');
 	background-repeat: no-repeat, no-repeat;
 	background-position: bottom left, bottom right;
 }
@@ -297,7 +297,7 @@ button:hover {
 	@include center-wrapper();
 	margin-top: 100px;
 	padding-bottom: 200px;
-	background: url('/assets/images/leav_foto.png');
+	background: url('../../assets/images/leav_foto.png');
 	background-position: right top 150%;
 	background-repeat: no-repeat;
 }
