@@ -184,8 +184,8 @@ body {
 	width: 465px;
 	height: 465px;
 	border-radius: 50%;
-	right: 22%;
-	bottom: 32%;
+	right: 18%;
+	bottom: 50%;
 }
 
 .watch-online__button {
@@ -255,11 +255,13 @@ body {
 .pet__title {
 	grid-column: 1;
 	grid-row: 1;
+	margin: 0;
 }
 
 .pet__subtitle {
 	grid-column: 1;
 	grid-row: 2;
+	margin: 0;
 }
 
 .pet__icon {
@@ -322,6 +324,12 @@ body {
 
 .how-it-work__arrow {
 	margin-top: 65px;
+}
+
+.pick-and-feed__link {
+	color: #333B41;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #F9804B;
 }
 
 .pick-and-feed__button {
