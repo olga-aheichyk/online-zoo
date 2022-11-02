@@ -230,13 +230,14 @@ body {
 
 .backstage__title {
 	font-size: 48px;
-	margin-bottom: 35px;
+	line-height: 120%;
+	margin-bottom: 30px;
 }
 
 .backstage__subtitle {
 	font-size: 24px;
 	margin-top: 45px;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 }
 
 .backstage__text {
@@ -370,6 +371,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	color: #333b41;
 }
 
 .how-it-work__title {
