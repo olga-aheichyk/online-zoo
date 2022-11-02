@@ -159,6 +159,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+	position: relative;
 }
 
 .watch-online__title {
@@ -169,7 +170,6 @@ body {
 	text-transform: uppercase;
 	width: 500px;
 	color: #ffffff;
-	position: relative;
 	z-index: 2;
 }
 
@@ -184,8 +184,8 @@ body {
 	width: 465px;
 	height: 465px;
 	border-radius: 50%;
-	right: 18%;
-	bottom: 50%;
+	right: 10%;
+	bottom: 30%;
 }
 
 .watch-online__button {
@@ -246,10 +246,16 @@ body {
 	gap: 10px 20px;
 }
 
+.pet {
+	border: 1px solid #F9804B;
+	border-radius: 5px;
+}
+
 .pet__title-wrapper {
 	display: grid;
 	grid-template-columns: auto 40px;
 	grid-template-rows: 1fr 1fr;
+	padding: 5px 10px;
 }
 
 .pet__title {
@@ -273,6 +279,7 @@ body {
 
 .pet__bottom {
 	@include standart-button();
+	margin-top: 30px;
 }
 
 .pick-and-feed {
@@ -499,6 +506,14 @@ body {
 .social__item {
 	margin-bottom: 10px;
 	color: #ffffff;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.social__text {
+	margin-top: 3px;
+	margin-bottom: auto;
 }
 
 .footer__design-text {
