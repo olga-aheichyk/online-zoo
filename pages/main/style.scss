@@ -249,6 +249,12 @@ body {
 .pet {
 	border: 1px solid #F9804B;
 	border-radius: 5px;
+	overflow: hidden;
+	transition: all 0.4s;
+
+	&:hover {
+		transform: scale(1.1);
+	}
 }
 
 .pet__title-wrapper {
