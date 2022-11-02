@@ -225,6 +225,22 @@ body {
 	display: flex;
 	justify-content: space-between;
 	gap: 50px;
+	color: #333B41;
+}
+
+.backstage__title {
+	font-size: 48px;
+	margin-bottom: 35px;
+}
+
+.backstage__subtitle {
+	font-size: 24px;
+	margin-top: 45px;
+	margin-bottom: 35px;
+}
+
+.backstage__text {
+	margin: 0px 0px 10px;
 }
 
 .pets {
@@ -322,10 +338,45 @@ body {
 	align-items: center;
 }
 
+.pick-and-feed__title {
+	font-size: 48px;
+	line-height: 120%;
+	color: #FE9013;
+	margin-bottom: 50px;
+}
+
+.pick-and-feed__text-wrapper {
+	align-self: flex-start;
+	color: #333B41;
+	margin-left: 100px;
+}
+
+.pick-and-feed__subtitle {
+	font-size: 24px;
+	margin-bottom: 50px;
+}
+
+.pick-and-feed__text {
+	font-size: 16px;
+	width: 82%;
+}
+
+.pick-and-feed__text--bold {
+	font-weight: 500;
+	width: 100%;
+}
+
 .how-it-work {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.how-it-work__title {
+	font-size: 36px;
+	line-height: 130%;
+	margin-top: 40px;
+	margin-bottom: 30px;
 }
 
 .how-it-work__sceme {
@@ -349,6 +400,12 @@ body {
 	border: 1px solid #F9804B;
 	border-radius: 5px;
 	background-color: #ffffff;
+}
+
+.how-it-work__description {
+	margin-top: 20px;
+	text-align: left;
+	padding-left: 2px;
 }
 
 .how-it-work__arrow {
