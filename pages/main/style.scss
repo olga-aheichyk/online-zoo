@@ -525,18 +525,27 @@ body {
 
 .footer {
 	background-color: $black;
-	padding-top: 40px;
+	padding-top: 20px;
 	padding-bottom: 40px;
+	height: 440px;
 }
 
 .footer-wrapper {
-	@include content-wrapper()
+	@include content-wrapper();
+
+	.nav__list {
+		margin-left: 220px;
+	}
 }
 
 .footer__top-wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.footer__logo {
+	margin-bottom: 15px;
 }
 
 .subscribe__title {
