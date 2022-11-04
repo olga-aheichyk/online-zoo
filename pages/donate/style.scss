@@ -94,6 +94,10 @@ $mobile-width: 320px;
 	overflow: hidden;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 ul {
 	padding-left: 0;
 }

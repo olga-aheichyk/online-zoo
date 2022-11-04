@@ -92,6 +92,10 @@ $mobile-width: 320px;
 	overflow: hidden;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 ul {
 	padding-left: 0;
 }
@@ -630,5 +634,6 @@ body {
 }
 
 .footer__design-text {
+	font-weight: 100;
 	color: #ffffff;
 }
