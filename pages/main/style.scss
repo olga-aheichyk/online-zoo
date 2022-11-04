@@ -269,6 +269,11 @@ body {
 	border-radius: 50%;
 	border: none;
 	background: $orange;
+
+	&:hover {
+		cursor: pointer;
+		background: #E47209;
+	}
 }
 
 .pets__list {
