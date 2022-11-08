@@ -435,12 +435,31 @@ body {
 .amount__radio-wrapper {
 	margin-top: 20px;
 	display: flex;
-	gap: 50px;
+	gap: 35px;
+}
+
+.amount__radio-item {
+	input {
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		border: 1px solid #FE9013;
+		-webkit-appearance: none;
+	}
+
+	input:checked {
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		border: none;
+		background-color: $green;
+		-webkit-appearance: none;
+	}
 }
 
 .amount__radio-label {
 	font-weight: 400;
-	margin-left: 20px;
+	margin-left: 5px;
 }
 
 .pick-and-feed__button {
