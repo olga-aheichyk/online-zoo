@@ -95,7 +95,7 @@
 								<div class="amount__clicable-area">
 									<div class="amount__circle"></div>
 								</div>
-								<div class="amount__clicable-area">
+								<div class="amount__clicable-area amount__clicable-area--active">
 									<div class="amount__circle"></div>
 								</div>
 								<div class="amount__clicable-area">
@@ -113,13 +113,12 @@
 								<div class="amount__clicable-area">
 									<div class="amount__circle"></div>
 								</div>
-								<!-- <div class="amount__circle amount__circle--active"></div> -->
 							</div>
 						</div>
 						<div class="amount__list">
 							<div class="amount__item">$5000</div>
 							<div class="amount__item">$200</div>
-							<div class="amount__item">$1000</div>
+							<div class="amount__item amount__item--active">$1000</div>
 							<div class="amount__item">$500</div>
 							<div class="amount__item">$250</div>
 							<div class="amount__item">$100</div>
@@ -128,7 +127,9 @@
 						</div>
 
 						<div class="amount__input-wrapper">
-							<input class="amount__input" type="number" placeholder="Another amount">
+							<div class="amount__wrapper">
+								<input class="amount__input" type="number" placeholder="Another amount">
+							</div>
 							<div class="amount__radio-wrapper">
 								<div class="amount__radio-item">
 									<input type="radio" id="monthly" checked>
@@ -187,6 +188,9 @@
 				</div>
 				<nav class="nav">
 					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="../main/index.html" class="nav__link">About</a>
+						</li>
 						<li class="nav__item">
 							<a href="#" class="nav__link">Map</a>
 						</li>
