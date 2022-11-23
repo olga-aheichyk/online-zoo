@@ -62,7 +62,12 @@
 
 		<section class="backstage">
 			<div class="backstage__wrapper">
-				<img class="backstage__image" src="../../assets/images/bamboo-cap.jpg" alt="backstage" width="609" height="403">
+				<picture>
+					<source media="(max-width: 320px)" srcset="img/logo-desktop.svg">
+					<source media="(max-width: 640px)" srcset="img/logo-tablet.svg">
+					<source media="(max-width: 1000px)" srcset="../../assets/images/bamboo-cap-1000.jpg">
+					<img class="backstage__image" src="../../assets/images/bamboo-cap.jpg" alt="backstage">
+				</picture>
 				<div class="backstage__text">
 					<h2 class="backstage__title">
 						The Backstage of the Wilderness World.
@@ -113,6 +118,14 @@
 							<img class="pet__icon" src="../../assets/icons/banana-bambuk-icon.svg" alt="banana" height="37">
 						</div>
 					</article>
+					<div class="pet__inner-slider">
+						<button class="pets__slider pets__slider--left">
+							<img class="pets__slider-arrow" src="../../assets/icons/left-arrow.svg" alt="left arrow">
+						</button>
+						<button class="pets__slider pets__slider--right">
+							<img class="pets__slider-arrow" src="../../assets/icons/right-arrow.svg" alt="right arrow">
+						</button>
+					</div>
 					<article class="pet">
 						<img class="pet__image" src="../../assets/images/sloth-card.jpg" alt="sloth" height="366">
 						<div class="pet__title-wrapper">
@@ -320,6 +333,9 @@
 
 				<nav class="nav">
 					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link nav__link--active">About</a>
+						</li>
 						<li class="nav__item">
 							<a href="#" class="nav__link">Map</a>
 						</li>

@@ -20,7 +20,8 @@ $black: #000000;
 // viewports
 
 $desktop-width: 1600px;
-$tablet-width: 768px;
+$small-desktop-width: 1000px;
+$tablet-width: 640px;
 $mobile-width: 320px;
 
 // mixins
@@ -33,16 +34,22 @@ $mobile-width: 320px;
 	width: 1600px;
 	box-sizing: border-box;
 
-	@media (max-width: $tablet-width) {
-		width: 768px;
+	@media (max-width: $small-desktop-width) {
+		width: $small-desktop-width;
 		padding-left: 30px;
 		padding-right: 30px;
 	}
 
-	@media (max-width: $mobile-width) {
-		width: 320px;
+	@media (max-width: $tablet-width) {
+		width: $tablet-width;
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+
+	@media (max-width: $mobile-width) {
+		width: $mobile-width;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
 
@@ -53,6 +60,18 @@ $mobile-width: 320px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0;
+
+	@media (max-width: $small-desktop-width) {
+		width: 940px;
+	}
+
+	@media (max-width: $tablet-width) {
+		width: 600px;
+	}
+
+	@media (max-width: $mobile-width) {
+		width: 300px;
+	}
 }
 
 @mixin standart-button {
