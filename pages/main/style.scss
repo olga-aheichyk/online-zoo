@@ -534,6 +534,7 @@ body {
 
 .header {
 	background-color: $black;
+	height: 80px;
 }
 
 .header__wrapper {
@@ -550,9 +551,10 @@ body {
 
 .header__left-wrapper {
 	display: flex;
-	align-items: center;
-	//align-items: flex-start;
+	//align-items: center;
+	align-items: flex-start;
 	gap: 40px;
+	margin-left: 10px;
 }
 
 .nav__list {
@@ -572,6 +574,10 @@ body {
 
 .nav__link--active {
 	color: #F9804B;
+}
+
+.header__design {
+	margin-right: -5px;
 }
 
 .watch-online {
@@ -620,8 +626,8 @@ body {
 	@media (max-width: $small-desktop-width) {
 		font-size: 86px;
 		width: 450px;
-		margin-top: 10px;
-		margin-right: 30px;
+		margin-top: 2px;
+		margin-right: 37px;
 	}
 
 	@media (max-width: $tablet-width) {
@@ -668,7 +674,7 @@ body {
 	margin: 65px 97px 0 0;
 
 	@media (max-width: $small-desktop-width) {
-		margin: 40px 105px 0 0;
+		margin: 40px 113px 0 0;
 	}
 
 	@media (max-width: $tablet-width) {
@@ -693,6 +699,8 @@ body {
 	@media (max-width: $small-desktop-width) {
 		background: none;
 		margin-top: 110px;
+		padding-left: 24px;
+		padding-right: 36px;
 		height: auto;
 	}
 
@@ -802,6 +810,8 @@ body {
 	@media (max-width: $small-desktop-width) {
 		padding-top: 120px;
 		padding-bottom: 140px;
+		padding-left: 47px;
+		padding-right: 60px;
 		background-size: 15%, 25%;
 	}
 }
@@ -895,7 +905,7 @@ body {
 	background-color: #ffffff;
 
 	@media (max-width: $small-desktop-width) {
-		padding: 10px 15px 6px;
+		padding: 0px 15px 7px;
 	}
 }
 
@@ -962,12 +972,13 @@ body {
 
 .pick-and-feed__title {
 	font-size: 48px;
+	font-weight: 500;
 	line-height: 120%;
 	color: #FE9013;
 	margin-bottom: 50px;
 
 	@media (max-width: $small-desktop-width) {
-		margin-bottom: 25px;
+		margin-bottom: 0;
 	}
 }
 
@@ -997,6 +1008,7 @@ body {
 
 	@media (max-width: $small-desktop-width) {
 		width: 95%;
+		margin-top: -4px;
 	}
 }
 
@@ -1033,7 +1045,7 @@ body {
 	margin-bottom: 30px;
 
 	@media (max-width: $small-desktop-width) {
-		margin-top: 30px;
+		margin-top: 25px;
 		margin-bottom: 10px;
 	}
 }
@@ -1096,6 +1108,8 @@ body {
 
 	@media (max-width: $small-desktop-width) {
 		padding-bottom: 140px;
+		padding-left: 16px;
+		padding-right: 31px;
 		background-size: 20%;
 		background-position: right top 123%;
 	}
@@ -1245,7 +1259,7 @@ body {
 
 		@media (max-width: $small-desktop-width) {
 			margin-left: 90px;
-			margin-bottom: 7px;
+			margin-bottom: 11px;
 		}
 	}
 }
@@ -1258,11 +1272,15 @@ body {
 
 .footer__logo {
 	margin-bottom: 15px;
+
+	@media (max-width: $small-desktop-width) {
+		margin-bottom: 5px;
+	}
 }
 
 .subscribe {
-	margin-right: 32px;
-	margin-top: 2px;
+	margin-right: 30px;
+	margin-top: 0px;
 }
 
 .subscribe__title {
@@ -1270,6 +1288,10 @@ body {
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 120%;
+
+	@media (max-width: $small-desktop-width) {
+		margin-bottom: 10px;
+	}
 }
 
 
@@ -1320,6 +1342,10 @@ body {
 	margin-bottom: 40px;
 	border-radius: 5px;
 	text-align: center;
+
+	@media (max-width: $small-desktop-width) {
+		margin-top: 19px;
+	}
 }
 
 .footer__bottom-wrapper {
@@ -1337,16 +1363,18 @@ body {
 	margin-bottom: 10px;
 	color: #ffffff;
 	display: flex;
-	gap: 10px;
+	gap: 14px;
 	align-items: center;
 }
 
 .social__text {
-	margin-top: 3px;
+	margin-top: 5px;
 	margin-bottom: auto;
 }
 
 .footer__design-text {
 	font-weight: 100;
 	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
