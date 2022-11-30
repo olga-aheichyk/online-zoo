@@ -163,7 +163,16 @@ body {
 	// @media only screen and (max-width: $mobile-width) {
 	// 	min-width: $mobile-width;
 	// }
+}
 
+::-webkit-scrollbar {
+	width: 0;
+	height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $orange;
+	border-radius: 5px;
 }
 
 .header {

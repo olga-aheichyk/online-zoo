@@ -167,6 +167,16 @@ body {
 
 }
 
+::-webkit-scrollbar {
+	width: 0;
+	height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $orange;
+	border-radius: 5px;
+}
+
 .header {
 	background-color: $black;
 	height: 80px;
@@ -326,12 +336,20 @@ body {
 	@include center-wrapper();
 	background: url('../../assets/images/panda-donate.jpg');
 	height: 390px;
+
+	@media (max-width: $small-desktop-width) {
+		background-position: -170px 0px;
+	}
 }
 
 .donation {
 	background: $orange-gradient;
 	padding-top: 20px;
 	padding-bottom: 180px;
+
+	@media (max-width: $small-desktop-width) {
+		padding-bottom: 30px;
+	}
 }
 
 .donation__wrapper {
@@ -348,6 +366,13 @@ body {
 	margin-bottom: 10px;
 	margin-left: 10px;
 	margin-right: -10px;
+
+	@media (max-width: $small-desktop-width) {
+		margin-left: 0;
+		margin-right: 0;
+		width: 90%;
+		margin-bottom: 30px;
+	}
 }
 
 .donation__introduction-text {
@@ -356,6 +381,11 @@ body {
 	margin-left: 10px;
 	margin-top: 0;
 	margin-bottom: 0;
+
+	@media (max-width: $small-desktop-width) {
+		margin-left: 0;
+		font-weight: 500;
+	}
 }
 
 .donation__title {
@@ -366,6 +396,11 @@ body {
 	margin-top: 45px;
 	margin-bottom: 60px;
 	margin-left: 10px;
+
+	@media (max-width: $small-desktop-width) {
+		margin-bottom: 40px;
+		margin-left: 0px;
+	}
 }
 
 .pick-and-feed {
@@ -378,6 +413,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	@media (max-width: $small-desktop-width) {
+		padding-top: 18px;
+		padding-bottom: 40px;
+	}
 }
 
 .pick-and-feed__title {
@@ -385,6 +425,12 @@ body {
 	line-height: 120%;
 	color: #FE9013;
 	margin-bottom: 20px;
+
+	@media (max-width: $small-desktop-width) {
+		font-weight: 400;
+		margin-left: -15px;
+		margin-bottom: 15px;
+	}
 }
 
 .pick-and-feed__text {
@@ -395,11 +441,20 @@ body {
 	color: #333B41;
 	margin-left: 100px;
 	margin-bottom: 50px;
+
+	@media (max-width: $small-desktop-width) {
+		align-self: center;
+		margin-left: 0;
+	}
 }
 
 .animal {
 	display: flex;
 	align-items: center;
+
+	@media (max-width: $small-desktop-width) {
+		margin-left: -20px;
+	}
 }
 
 .animal__diet {
@@ -431,12 +486,23 @@ body {
 	margin-top: 33px;
 }
 
+.animal__widget {
+	margin-top: 8px;
+	margin-left: 5px;
+}
+
 .amount {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 140%;
 	color: #333B41;
 	margin-left: 20px;
+
+	@media (max-width: $small-desktop-width) {
+		margin-left: 0;
+		width: 86%;
+		overflow: hidden;
+	}
 }
 
 .amount__title {
@@ -446,6 +512,10 @@ body {
 	color: $black;
 	margin-top: 53px;
 	margin-bottom: 16px;
+
+	@media (max-width: $small-desktop-width) {
+		margin-top: 50px;
+	}
 }
 
 .amount__line {
@@ -454,6 +524,11 @@ body {
 	background: #404950;
 	border-radius: 2px;
 	position: relative;
+
+	@media (max-width: $small-desktop-width) {
+		width: 807px;
+		height: 25px;
+	}
 }
 
 .amount__inner-line {
@@ -463,6 +538,10 @@ body {
 	position: absolute;
 	top: 50%;
 	left: 25px;
+
+	@media (max-width: $small-desktop-width) {
+		width: 775px;
+	}
 }
 
 .amount__cirles {
@@ -474,6 +553,10 @@ body {
 	position: absolute;
 	top: 50%;
 	left: 25px;
+
+	@media (max-width: $small-desktop-width) {
+		left: 11px;
+	}
 }
 
 .amount__clicable-area {
@@ -526,6 +609,13 @@ body {
 	grid-template-columns: repeat(8, 1fr);
 	width: 105%;
 	margin-left: -30px;
+
+	@media (max-width: $small-desktop-width) {
+		grid-template-columns: repeat(7, 1fr);
+		gap: 65px;
+		width: 105%;
+		margin-left: -20px;
+	}
 }
 
 .amount__item {
@@ -536,6 +626,12 @@ body {
 	text-transform: uppercase;
 	color: #333B41;
 	margin-top: 13px;
+
+	@media (max-width: $small-desktop-width) {
+		&:first-child {
+			display: none;
+		}
+	}
 }
 
 .amount__item--active {
