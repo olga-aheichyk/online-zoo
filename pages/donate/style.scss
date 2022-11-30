@@ -149,15 +149,40 @@ body {
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	line-height: 140%;
-	margin: 0;
+	margin: 0 auto;
+	// grid-template-rows: min-content 1fr min-content;
+	// min-width: 1600px;
+
+	// @media only screen and (max-width: $small-desktop-width) {
+	// 	min-width: $small-desktop-width;
+	// }
+
+	// @media only screen and (max-width: $tablet-width) {
+	// 	min-width: $tablet-width;
+	// }
+
+	// @media only screen and (max-width: $mobile-width) {
+	// 	min-width: $mobile-width;
+	// }
+
 }
 
 .header {
 	background-color: $black;
 	height: 80px;
+	min-width: 1600px;
 
-	@media (max-width: $tablet-width) {
+	@media only screen and (max-width: $small-desktop-width) {
+		min-width: $small-desktop-width;
+	}
+
+	@media only screen and (max-width: $tablet-width) {
 		height: 34px;
+		min-width: $tablet-width;
+	}
+
+	@media only screen and (max-width: $mobile-width) {
+		min-width: $mobile-width;
 	}
 }
 
@@ -173,9 +198,14 @@ body {
 	line-height: 140%;
 
 	@media (max-width: $tablet-width) {
-		padding-top: 0;
+		padding-top: 2px;
 		padding-bottom: 0;
 		padding-left: 10px;
+	}
+
+	@media (max-width: $mobile-width) {
+		padding-right: 10px;
+		padding-left: 1px;
 	}
 }
 
@@ -184,7 +214,7 @@ body {
 	//align-items: center;
 	align-items: flex-start;
 	gap: 40px;
-	margin-left: 10px;
+	margin-left: 0;
 
 	@media (max-width: $tablet-width) {
 		display: none;
@@ -212,7 +242,9 @@ body {
 }
 
 .header__design {
-	margin-right: -5px;
+	margin-right: 0;
+	padding-top: 14px;
+	padding-bottom: 19px;
 
 	@media (max-width: $tablet-width) {
 		display: none;
@@ -249,11 +281,20 @@ body {
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 140%;
+
+		@media (max-width: $mobile-width) {
+			font-size: 14px;
+		}
 	}
 
 	.nav__item {
 		padding: 0px 25px;
 		margin-top: 15px;
+
+		@media (max-width: $mobile-width) {
+			padding: 0px 15px;
+			margin-top: 10px;
+		}
 
 		&:first-child {
 			padding-top: 15px;
@@ -280,6 +321,7 @@ body {
 		padding-top: 10px;
 	}
 }
+
 .watch-online {
 	@include center-wrapper();
 	background: url('../../assets/images/panda-donate.jpg');
@@ -589,14 +631,25 @@ body {
 
 .footer {
 	background-color: $black;
-	padding-top: 20px;
+	padding-top: 17px;
 	padding-bottom: 40px;
 	height: 440px;
+	min-width: 1600px;
 
-	@media (max-width: $tablet-width) {
+	@media only screen and (max-width: $small-desktop-width) {
+		min-width: $small-desktop-width;
+	}
+
+	@media only screen and (max-width: $tablet-width) {
+		min-width: $tablet-width;
 		padding-top: 14px;
 		padding-bottom: 0;
 		height: auto;
+	}
+
+	@media only screen and (max-width: $mobile-width) {
+		min-width: $mobile-width;
+		padding-top: 20px;
 	}
 }
 
@@ -614,12 +667,21 @@ body {
 		@media (max-width: $tablet-width) {
 			margin-left: 0;
 		}
+
+		@media (max-width: $mobile-width) {
+			gap: 34px;
+		}
 	}
 
 	@media (max-width: $tablet-width) {
 		display: grid;
 		grid-template-columns: auto auto 20px;
 		grid-template-rows: 50px auto auto;
+	}
+
+	@media (max-width: $mobile-width) {
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto auto;
 	}
 }
 
@@ -631,6 +693,10 @@ body {
 	@media (max-width: $tablet-width) {
 		align-items: flex-start;
 	}
+
+	@media (max-width: $mobile-width) {
+		justify-content: center;
+	}
 }
 
 .footer__logo {
@@ -638,6 +704,10 @@ body {
 
 	@media (max-width: $small-desktop-width) {
 		margin-bottom: 5px;
+	}
+
+	@media (max-width: $mobile-width) {
+		margin-bottom: 25px;
 	}
 }
 
@@ -711,12 +781,19 @@ body {
 	text-align: center;
 
 	@media (max-width: $small-desktop-width) {
-		margin-top: 19px;
+		margin-top: 37px;
 	}
 
 	@media (max-width: $tablet-width) {
 		grid-column: 1;
 		grid-row: 2;
+	}
+
+	@media (max-width: $mobile-width) {
+		grid-column: 1;
+		grid-row: 3;
+		margin-top: 25px;
+		margin-bottom: 18px;
 	}
 }
 
@@ -728,6 +805,13 @@ body {
 	@media (max-width: $tablet-width) {
 		grid-column: 1 / -1;
 		grid-row: 3;
+	}
+
+	@media (max-width: $mobile-width) {
+		flex-direction: column-reverse;
+		gap: 18px;
+		grid-column: 1;
+		grid-row: 4;
 	}
 }
 
@@ -749,6 +833,14 @@ body {
 		gap: 10px;
 		grid-column: 3;
 		grid-row: 1 / 2;
+	}
+
+	@media (max-width: $mobile-width) {
+		flex-direction: row;
+		justify-content: center;
+		gap: 30px;
+		grid-column: 1;
+		grid-row: 2;
 	}
 }
 
