@@ -150,6 +150,25 @@ body {
 	line-height: 140%;
 	margin: 0 auto;
 	// grid-template-rows: min-content 1fr min-content;
+	// min-width: 1600px;
+
+	// @media only screen and (max-width: $small-desktop-width) {
+	// 	min-width: $small-desktop-width;
+	// }
+
+	// @media only screen and (max-width: $tablet-width) {
+	// 	min-width: $tablet-width;
+	// }
+
+	// @media only screen and (max-width: $mobile-width) {
+	// 	min-width: $mobile-width;
+	// }
+
+}
+
+.header {
+	background-color: $black;
+	height: 80px;
 	min-width: 1600px;
 
 	@media only screen and (max-width: $small-desktop-width) {
@@ -157,21 +176,12 @@ body {
 	}
 
 	@media only screen and (max-width: $tablet-width) {
+		height: 34px;
 		min-width: $tablet-width;
 	}
 
 	@media only screen and (max-width: $mobile-width) {
 		min-width: $mobile-width;
-	}
-
-}
-
-.header {
-	background-color: $black;
-	height: 80px;
-
-	@media (max-width: $tablet-width) {
-		height: 34px;
 	}
 }
 
@@ -203,7 +213,7 @@ body {
 	//align-items: center;
 	align-items: flex-start;
 	gap: 40px;
-	margin-left: 10px;
+	margin-left: 0;
 
 	@media (max-width: $tablet-width) {
 		display: none;
@@ -230,7 +240,9 @@ body {
 }
 
 .header__design {
-	margin-right: -5px;
+	margin-right: 0;
+	padding-top: 14px;
+	padding-bottom: 19px;
 
 	@media (max-width: $tablet-width) {
 		display: none;
@@ -419,7 +431,7 @@ body {
 	margin: 65px 97px 0 0;
 
 	@media (max-width: $small-desktop-width) {
-		margin: 40px 113px 0 0;
+		margin: 40px 104px 0 0;
 	}
 
 	@media (max-width: $tablet-width) {
@@ -455,8 +467,8 @@ body {
 	@media (max-width: $small-desktop-width) {
 		background: none;
 		margin-top: 110px;
-		padding-left: 24px;
-		padding-right: 36px;
+		padding-left: 30px;
+		padding-right: 30px;
 		height: auto;
 	}
 
@@ -600,10 +612,10 @@ body {
 	background-position: bottom left, bottom right;
 
 	@media (max-width: $small-desktop-width) {
-		padding-top: 120px;
+		padding-top: 132px;
 		padding-bottom: 140px;
-		padding-left: 47px;
-		padding-right: 60px;
+		padding-left: 30px;
+		padding-right: 30px;
 		background-size: 15%, 25%;
 	}
 
@@ -791,7 +803,10 @@ body {
 	margin-top: 30px;
 
 	@media (max-width: $small-desktop-width) {
-		margin-top: 82px;
+		font-weight: 600;
+		font-size: 14px;
+		letter-spacing: 0.3px;
+		margin-top: 81px;
 	}
 
 	@media (max-width: $tablet-width) {
@@ -807,15 +822,22 @@ body {
 	background: $orange-gradient;
 	padding-top: 70px;
 	padding-bottom: 80px;
+	min-width: 1600px;
 
-	@media (max-width: $small-desktop-width) {
+	@media only screen and (max-width: $small-desktop-width) {
+		min-width: $small-desktop-width;
 		padding-top: 30px;
 		padding-bottom: 50px;
 	}
 
-	@media (max-width: $tablet-width) {
+	@media only screen and (max-width: $tablet-width) {
+		min-width: $tablet-width;
 		padding-top: 20px;
 		padding-bottom: 20px;
+	}
+
+	@media only screen and (max-width: $mobile-width) {
+		min-width: $mobile-width;
 	}
 }
 
@@ -1103,9 +1125,10 @@ body {
 	background-repeat: no-repeat;
 
 	@media (max-width: $small-desktop-width) {
-		padding-bottom: 140px;
-		padding-left: 16px;
-		padding-right: 31px;
+		margin-top: 103px;
+		padding-bottom: 136px;
+		padding-left: 30px;
+		padding-right: 30px;
 		background-size: 20%;
 		background-position: right top 123%;
 	}
@@ -1151,6 +1174,7 @@ body {
 
 	@media (max-width: $small-desktop-width) {
 		gap: 30px;
+		margin-top: 33px;
 	}
 
 	@media (max-width: $tablet-width) {
@@ -1294,7 +1318,10 @@ body {
 	margin-top: 40px;
 
 	@media (max-width: $small-desktop-width) {
-		margin-top: 50px;
+		margin-top: 53px;
+		font-weight: 600;
+		font-size: 14px;
+		letter-spacing: 0.3px;
 	}
 
 	@media (max-width: $tablet-width) {
@@ -1320,14 +1347,24 @@ body {
 
 .footer {
 	background-color: $black;
-	padding-top: 20px;
+	padding-top: 17px;
 	padding-bottom: 40px;
 	height: 440px;
+	min-width: 1600px;
 
-	@media (max-width: $tablet-width) {
+	@media only screen and (max-width: $small-desktop-width) {
+		min-width: $small-desktop-width;
+	}
+
+	@media only screen and (max-width: $tablet-width) {
+		min-width: $tablet-width;
 		padding-top: 14px;
 		padding-bottom: 0;
 		height: auto;
+	}
+
+	@media only screen and (max-width: $mobile-width) {
+		min-width: $mobile-width;
 	}
 }
 
@@ -1442,7 +1479,7 @@ body {
 	text-align: center;
 
 	@media (max-width: $small-desktop-width) {
-		margin-top: 19px;
+		margin-top: 37px;
 	}
 
 	@media (max-width: $tablet-width) {
