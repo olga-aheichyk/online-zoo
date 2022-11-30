@@ -210,7 +210,7 @@ body {
 	@media (max-width: $tablet-width) {
 		padding-top: 2px;
 		padding-bottom: 0;
-		padding-left: 10px;
+		padding-left: 0;
 	}
 
 	@media (max-width: $mobile-width) {
@@ -320,7 +320,7 @@ body {
 .burger-menu__button {
 	background-color: #000000;
 	border: none;
-	margin-right: -15px;
+	margin-right: -5px;
 }
 
 .open-menu {
@@ -340,15 +340,32 @@ body {
 	@media (max-width: $small-desktop-width) {
 		background-position: -170px 0px;
 	}
+
+	@media (max-width: $tablet-width) {
+		height: 335px;
+		background-position: -365px -28px;
+	}
 }
 
 .donation {
 	background: $orange-gradient;
 	padding-top: 20px;
 	padding-bottom: 180px;
+	min-width: 1600px;
 
-	@media (max-width: $small-desktop-width) {
+	@media only screen and (max-width: $small-desktop-width) {
+		min-width: $small-desktop-width;
 		padding-bottom: 30px;
+	}
+
+	@media only screen and (max-width: $tablet-width) {
+		min-width: $tablet-width;
+		padding-top: 10px;
+		padding-bottom: 45px;
+	}
+
+	@media only screen and (max-width: $mobile-width) {
+		min-width: $mobile-width;
 	}
 }
 
@@ -372,6 +389,13 @@ body {
 		margin-right: 0;
 		width: 90%;
 		margin-bottom: 30px;
+	}
+
+	@media (max-width: $tablet-width) {
+		font-size: 24px;
+		line-height: 120%;
+		width: 100%;
+		margin-bottom: 20px;
 	}
 }
 
@@ -401,6 +425,11 @@ body {
 		margin-bottom: 40px;
 		margin-left: 0px;
 	}
+
+	@media (max-width: $tablet-width) {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
 }
 
 .pick-and-feed {
@@ -418,6 +447,13 @@ body {
 		padding-top: 18px;
 		padding-bottom: 40px;
 	}
+
+	@media (max-width: $tablet-width) {
+		padding-top: 30px;
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-bottom: 30px;
+	}
 }
 
 .pick-and-feed__title {
@@ -430,6 +466,11 @@ body {
 		font-weight: 400;
 		margin-left: -15px;
 		margin-bottom: 15px;
+	}
+
+	@media (max-width: $tablet-width) {
+		margin-left: 0;
+		margin-bottom: 20px;
 	}
 }
 
@@ -445,6 +486,10 @@ body {
 	@media (max-width: $small-desktop-width) {
 		align-self: center;
 		margin-left: 0;
+	}
+
+	@media (max-width: $tablet-width) {
+		text-align: center;
 	}
 }
 
@@ -462,6 +507,10 @@ body {
 	flex-direction: column;
 	align-items: center;
 	margin-top: 70px;
+
+	@media (max-width: $tablet-width) {
+		margin-top: 50px;
+	}
 }
 
 .animal__count {
@@ -489,6 +538,11 @@ body {
 .animal__widget {
 	margin-top: 8px;
 	margin-left: 5px;
+
+	@media (max-width: $tablet-width) {
+		margin-top: 0px;
+		margin-left: 10px;
+	}
 }
 
 .amount {
@@ -503,6 +557,10 @@ body {
 		width: 86%;
 		overflow: hidden;
 	}
+
+	@media (max-width: $tablet-width) {
+		width: 115%;
+	}
 }
 
 .amount__title {
@@ -515,6 +573,12 @@ body {
 
 	@media (max-width: $small-desktop-width) {
 		margin-top: 50px;
+	}
+
+	@media (max-width: $tablet-width) {
+		margin-top: 40px;
+		margin-bottom: 7px;
+		margin-left: 10px;
 	}
 }
 
@@ -529,6 +593,10 @@ body {
 		width: 807px;
 		height: 25px;
 	}
+
+	@media (max-width: $tablet-width) {
+		width: 598px;
+	}
 }
 
 .amount__inner-line {
@@ -541,6 +609,11 @@ body {
 
 	@media (max-width: $small-desktop-width) {
 		width: 775px;
+	}
+
+	@media (max-width: $tablet-width) {
+		width: 525px;
+		left: 35px;
 	}
 }
 
@@ -556,6 +629,10 @@ body {
 
 	@media (max-width: $small-desktop-width) {
 		left: 11px;
+	}
+
+	@media (max-width: $tablet-width) {
+		left: 35px;
 	}
 }
 
@@ -613,8 +690,12 @@ body {
 	@media (max-width: $small-desktop-width) {
 		grid-template-columns: repeat(7, 1fr);
 		gap: 65px;
-		width: 105%;
-		margin-left: -20px;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	@media (max-width: $tablet-width) {
+		grid-template-columns: repeat(5, 1fr);
 	}
 }
 
@@ -632,6 +713,12 @@ body {
 			display: none;
 		}
 	}
+
+	@media (max-width: $tablet-width) {
+		&:nth-child(2), &:nth-child(3) {
+			display: none;
+		}
+	}
 }
 
 .amount__item--active {
@@ -644,6 +731,11 @@ body {
 	align-items: center;
 	margin-top: 50px;
 	margin-bottom: 28px;
+
+	@media (max-width: $tablet-width) {
+		margin-top: 49px;
+		margin-bottom: 24px;
+	}
 }
 
 .amount__wrapper {
@@ -677,12 +769,22 @@ body {
 	&[type=number] {
 		-moz-appearance: textfield;
 	}
+
+	@media (max-width: $tablet-width) {
+		width: 182px;
+		padding: 10px 30px 10px 5px;
+	}
 }
 
 .amount__radio-wrapper {
 	margin-top: 20px;
 	display: flex;
 	gap: 35px;
+
+	@media (max-width: $tablet-width) {
+		margin-top: 26px;
+		gap: 70px;
+	}
 }
 
 .amount__radio-item {
@@ -714,6 +816,10 @@ body {
 	text-align: center;
 	@include standart-button();
 	margin-left: 20px;
+
+	@media (max-width: $tablet-width) {
+		margin-left: 0;
+	}
 }
 
 .pick-and-feed__share-text {
@@ -723,6 +829,10 @@ body {
 	font-size: 16px;
 	line-height: 140%;
 	color: #333B41;
+
+	@media (max-width: $tablet-width) {
+		margin-left: 0;
+	}
 }
 
 .footer {

@@ -208,7 +208,7 @@ body {
 	@media (max-width: $tablet-width) {
 		padding-top: 2px;
 		padding-bottom: 0;
-		padding-left: 10px;
+		padding-left: 0;
 	}
 
 	@media (max-width: $mobile-width) {
@@ -315,7 +315,7 @@ body {
 .burger-menu__button {
 	background-color: #000000;
 	border: none;
-	margin-right: -15px;
+	margin-right: -5px;
 }
 
 .open-menu {
