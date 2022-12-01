@@ -321,6 +321,10 @@ body {
 	background-color: #000000;
 	border: none;
 	margin-right: -5px;
+
+	@media (max-width: $mobile-width) {
+		margin-right: -15px;
+	}
 }
 
 .open-menu {
@@ -345,6 +349,12 @@ body {
 		height: 335px;
 		background-position: -365px -28px;
 	}
+
+	@media (max-width: $tablet-width) {
+		height: 186px;
+		background-position: -146px 0;
+		background-size: 241%;
+	}
 }
 
 .donation {
@@ -366,6 +376,7 @@ body {
 
 	@media only screen and (max-width: $mobile-width) {
 		min-width: $mobile-width;
+		padding-bottom: 20px;
 	}
 }
 
@@ -430,6 +441,13 @@ body {
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
+
+	@media (max-width: $mobile-width){
+		font-size: 24px;
+		line-height: 120%;
+		margin-top: 28px;
+		margin-bottom: 27px;
+	}
 }
 
 .pick-and-feed {
@@ -454,6 +472,13 @@ body {
 		padding-right: 40px;
 		padding-bottom: 30px;
 	}
+
+	@media (max-width: $mobile-width) {
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 23px;
+		padding-bottom: 22px;
+	}
 }
 
 .pick-and-feed__title {
@@ -471,6 +496,11 @@ body {
 	@media (max-width: $tablet-width) {
 		margin-left: 0;
 		margin-bottom: 20px;
+	}
+
+	@media (max-width: $mobile-width) {
+		font-size: 24px;
+		margin-bottom: 9px;
 	}
 }
 
@@ -491,6 +521,12 @@ body {
 	@media (max-width: $tablet-width) {
 		text-align: center;
 	}
+
+	@media (max-width: $mobile-width) {
+		font-size: 16px;
+		line-height: 140%;
+		margin-bottom: 10px;
+	}
 }
 
 .animal {
@@ -499,6 +535,10 @@ body {
 
 	@media (max-width: $small-desktop-width) {
 		margin-left: -20px;
+	}
+
+	@media (max-width: $mobile-width) {
+		margin-left: 10px;
 	}
 }
 
@@ -511,6 +551,11 @@ body {
 	@media (max-width: $tablet-width) {
 		margin-top: 50px;
 	}
+
+	@media (max-width: $mobile-width) {
+		margin-top: 35px;
+		width: 90px;
+	}
 }
 
 .animal__count {
@@ -519,6 +564,10 @@ body {
 	font-size: 72px;
 	line-height: 80%;
 	text-transform: uppercase;
+
+	@media (max-width: $mobile-width) {
+		font-size: 43px;
+	}
 }
 
 .animal__description {
@@ -527,12 +576,27 @@ body {
 	font-size: 16px;
 	line-height: 140%;
 	margin-top: 10px;
+
+	@media (max-width: $mobile-width) {
+		font-size: 9.02255px;
+	}
 }
 
 .animal__multiply {
 	margin-left: 11px;
 	margin-right: 55px;
 	margin-top: 33px;
+
+	@media (max-width: $mobile-width) {
+		margin-top: 15px;
+		margin-left: 15px;
+		margin-right: 20px;
+
+		img {
+			width: 8px;
+			height: 8px;
+		}
+	}
 }
 
 .animal__widget {
@@ -542,6 +606,12 @@ body {
 	@media (max-width: $tablet-width) {
 		margin-top: 0px;
 		margin-left: 10px;
+	}
+
+	@media (max-width: $mobile-width) {
+		margin-left: 0;
+		width: 160px !important;
+		height: 138px !important;
 	}
 }
 
@@ -560,6 +630,10 @@ body {
 
 	@media (max-width: $tablet-width) {
 		width: 115%;
+	}
+
+	@media (max-width: $mobile-width) {
+		width: 100%;
 	}
 }
 
@@ -580,6 +654,11 @@ body {
 		margin-bottom: 7px;
 		margin-left: 10px;
 	}
+
+	@media (max-width: $mobile-width) {
+		margin-top: 3px;
+		margin-left: 0;
+	}
 }
 
 .amount__line {
@@ -596,6 +675,11 @@ body {
 
 	@media (max-width: $tablet-width) {
 		width: 598px;
+	}
+
+	@media (max-width: $mobile-width) {
+		height: 15px;
+		width: 300px;
 	}
 }
 
@@ -615,6 +699,11 @@ body {
 		width: 525px;
 		left: 35px;
 	}
+
+	@media (max-width: $mobile-width) {
+		width: 262px;
+		left: 17px;
+	}
 }
 
 .amount__cirles {
@@ -633,6 +722,11 @@ body {
 
 	@media (max-width: $tablet-width) {
 		left: 35px;
+	}
+
+	@media (max-width: $mobile-width) {
+		left: 17px;
+		width: 455px;
 	}
 }
 
@@ -662,6 +756,12 @@ body {
 	border-radius: 50%;
 	border: 2px solid #FE9013;
 	position: absolute;
+
+	@media (max-width: $mobile-width) {
+		width: 12px;
+		height: 12px;
+		border: 1px solid #FE9013;
+	}
 }
 
 .amount__clicable-area--active::before {
@@ -672,6 +772,12 @@ body {
 	border-radius: 50%;
 	border: 2px solid #FE9013;
 	position: absolute;
+
+	@media (max-width: $mobile-width) {
+		width: 20px;
+		height: 20px;
+		border: 1px solid #FE9013;
+	}
 }
 
 .amount__circle {
@@ -679,6 +785,11 @@ body {
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
+
+	@media (max-width: $mobile-width) {
+		width: 5px;
+		height: 5px;
+	}
 }
 
 .amount__list {
@@ -696,6 +807,10 @@ body {
 
 	@media (max-width: $tablet-width) {
 		grid-template-columns: repeat(5, 1fr);
+	}
+
+	@media (max-width: $mobile-width) {
+		gap: 30px;
 	}
 }
 
@@ -718,6 +833,15 @@ body {
 		&:nth-child(2), &:nth-child(3) {
 			display: none;
 		}
+
+		&:nth-child(6) {
+			color: #FE9013;
+		}
+	}
+
+	@media (max-width: $mobile-width) {
+		font-size: 13px;
+		margin-top: 5px;
 	}
 }
 
@@ -735,6 +859,11 @@ body {
 	@media (max-width: $tablet-width) {
 		margin-top: 49px;
 		margin-bottom: 24px;
+	}
+
+	@media (max-width: $mobile-width) {
+		margin-top: 25px;
+		margin-bottom: 15px;
 	}
 }
 
@@ -832,6 +961,10 @@ body {
 
 	@media (max-width: $tablet-width) {
 		margin-left: 0;
+	}
+
+	@media (max-width: $tablet-width) {
+		font-size: 15px;
 	}
 }
 
